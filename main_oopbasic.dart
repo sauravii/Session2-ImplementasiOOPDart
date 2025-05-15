@@ -4,6 +4,19 @@
 // attribute => karakteristik dari sebuah class
 // method => apa yang bisa dibuat oleh sebuah class
 
+// Pillars of OOP => membuat programmer lebih gampang untuk mengimplementasikan OOP
+// 1. Encapsulation => mencegah modifikasi data dari luar class
+// Cara dicapai: tambahin _ ke depan dari data, dan pakai getter dan setter
+
+// 2. Abstraction => menyembunyikan detail implementasi, jadi hanya menampilkan detail yang penting saja.
+// Cara dicapai: keyword abstract
+
+// 3. Inheritance => parent class mewariskan attribute dan method ke child class => kita ga perlu tulis ulang-ulang code
+// Cara dicapai: keyword extends
+
+// 4. Polymorphism => banyak bentuk, lebih fleksibel, jadinya tuh kita tidak perlu tulis ulang ulang code dan ga perlu di-if-in satu per satu
+// pakai inheritance + method overriding
+
 class Mahasiswa {
   // atribut
   String nama = '';
