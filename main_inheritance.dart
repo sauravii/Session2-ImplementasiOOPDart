@@ -3,12 +3,19 @@
 // Class turunan = subclass (atau child class).
 
 // parent class
+import 'dart:math';
+
 class Hewan {
   String nama = '';
   int umur = 0;
 
   void makan() {
     print('$nama sedang makan...');
+  }
+
+  // override method -> dimana subclass menimpa method yang diwarisi dari superclass
+  void suara() {
+    print('Hewan bersuara...');
   }
 }
 
@@ -18,6 +25,13 @@ class Kucing extends Hewan {
 
   void mengeong() {
     print('$nama mengeong: Meow~');
+  }
+
+  // override -> memberikan versinya sendiri
+  void suara() {
+    super
+        .suara(); // ini kalau mau ambil method yg aslinya, kalau gamau ya gausah dipake
+    print("Tapi sebenarnya Kucing mengeong..");
   }
 }
 
@@ -29,4 +43,5 @@ void main() {
 
   kucing.makan(); // warisan dari Hewan
   kucing.mengeong(); // method dari Kucing
+  kucing.suara(); // overriding
 }
