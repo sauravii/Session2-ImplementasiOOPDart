@@ -1,4 +1,5 @@
-// Encapsulation
+// Encapsulation -> untuk menyembunyikan data (atribut) sebuah objek supaya tidak bisa diakses langsung dari luar class
+// hanya bisa diakses atau diubah lewat method khusus (biasanya getter dan setter).
 class Mobil {
   String? _merk = '';
   int _kecepatan = 0;

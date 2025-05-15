@@ -1,3 +1,4 @@
+// Static -> berarti property atau method itu milik class, bukan milik object (bisa akses tanpa bikin object dulu)
 class Mahasiswa {
   // static atribute
   static int jumlahMahasiswa = 0;
